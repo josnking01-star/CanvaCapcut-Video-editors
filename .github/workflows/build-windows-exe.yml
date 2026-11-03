@@ -14,6 +14,9 @@ jobs:
   build-windows:
     name: Build & Package Windows x64 Executable (.exe)
     runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
 
     steps:
       - name: Checkout Source Code
@@ -23,19 +26,22 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: Install Dependencies
-        run: npm ci || npm install
+        run: |
+          npm install --legacy-peer-deps
 
       - name: Run Quality Verification Tests
-        run: npm run test
+        run: |
+          npm run test
 
-      - name: Compile Full-Stack Client & Server
-        run: npm run build
+      - name: Compile Client & Full-Stack Engine
+        run: |
+          npm run build
 
-      - name: Install Electron & Desktop Packaging Tools
-        run: npm install --save-dev electron electron-builder
+      - name: Install Electron & Packaging Suite
+        run: |
+          npm install --save-dev electron electron-builder --legacy-peer-deps
 
       - name: Package Windows x64 Native Installer & Portable EXE
         run: |
@@ -44,20 +50,20 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
 
-      - name: Prepare Standalone Windows Bundle Fallback
-        shell: bash
+      - name: Prepare Standalone Windows Release Bundle
         run: |
           mkdir -p release-builds
           if [ -d "dist_electron" ]; then
             cp -r dist_electron/*.exe release-builds/ 2>/dev/null || true
           fi
-          # Also package complete executable portable bundle with Windows launcher
+          
+          # Prepare Portable Execution Bundle
           mkdir -p release-builds/OmniCutStudioElite_Portable
           cp -r dist release-builds/OmniCutStudioElite_Portable/
           cp -r node_modules release-builds/OmniCutStudioElite_Portable/ 2>/dev/null || true
           cp package.json server.ts tsconfig.json release-builds/OmniCutStudioElite_Portable/
           
-          # Create Windows double-click launcher .bat
+          # Windows double-click launcher
           cat << 'EOF' > release-builds/OmniCutStudioElite_Portable/Launch_OmniCut_Studio.bat
           @echo off
           title OmniCut Studio Elite v3.0
@@ -83,29 +89,25 @@ jobs:
             dist_electron/*.exe
             release-builds/*.zip
             release-builds/*.exe
+          if-no-files-found: warn
           retention-days: 30
 
-      - name: Create GitHub Release (If Tagged or on Main)
+      - name: Create GitHub Release
         if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v3.0.0
-          name: OmniCut Studio Elite v3.0.0 Release
+          name: OmniCut Studio Elite v3.0.0 Windows Release
           body: |
             ## OmniCut Studio Elite v3.0.0 - Windows Desktop Native Release
-
-            ### Features Included:
-            - **Canva-Style Design Editor**: Multi-layer graphic canvas with drag-and-drop elements and styling.
-            - **CapCut-Style Multi-Track Timeline**: Audio waveforms, video tracks, overlay tracks, and playhead scrubber.
-            - **Google Flow AI Generative Studio**: Prompt-to-video with 15-day freshness anti-duplication vault.
-            - **Multi-Platform Batch Compiler**: YouTube (16:9), TikTok/Reels (9:16), Instagram (1:1), Facebook (4:5).
-            - **Part 11 Price Lock & Grandfathering Engine**: Protects existing active subscription renewals.
-            - **Multi-Gateway Reconciliation**: Stripe, PayPal, SWIFT Wire, JazzCash, EasyPaisa & manual slips.
-            - **Supreme Master Owner Authority**: Locked to `josnking01@gmail.com` with tamper-proof audit trails.
-
-            ### Installation:
-            1. Download the `.exe` installer or the `.zip` portable package below.
-            2. Run the application directly on any Windows 10/11 64-bit PC.
+            
+            ### Included Deliverables:
+            - **Windows Setup Installer (.exe)**: One-click NSIS setup for Windows 10 & 11 (64-bit).
+            - **Portable Windows Package (.zip)**: Zero-install portable bundle with double-click launcher.
+            - **Canva Graphic Editor & CapCut Multi-Track Timeline**.
+            - **Google Flow Generative Media Studio & 15-Day Freshness Vault**.
+            - **Part 11 Price Lock & Grandfathering Protection**.
+            - **Master Owner Administration Suite (josnking01@gmail.com)**.
           files: |
             dist_electron/*.exe
             release-builds/*.zip
