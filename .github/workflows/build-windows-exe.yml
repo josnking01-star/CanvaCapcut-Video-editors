@@ -11,9 +11,39 @@ permissions:
   contents: write
 
 jobs:
-  build-windows:
-    name: Build & Package Windows x64 Executable (.exe)
+  build-web:
+    name: Build & Verify Web Engine
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Run Quality Verification Tests
+        run: npm run test
+        continue-on-error: true
+
+      - name: Compile Production Web Bundle
+        run: npm run build
+
+      - name: Upload Dist Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-artifacts
+          path: dist/
+          retention-days: 1
+
+  package-windows:
+    name: Package Windows Native Executable (.exe)
     runs-on: windows-latest
+    needs: build-web
     defaults:
       run:
         shell: bash
@@ -27,20 +57,13 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Dependencies
-        run: |
-          npm install --legacy-peer-deps
+      - name: Download Compiled Web Bundle
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-artifacts
+          path: dist
 
-      - name: Run Quality Verification Tests
-        run: |
-          npm run test
-        continue-on-error: true
-
-      - name: Compile Client & Full-Stack Engine
-        run: |
-          npm run build
-
-      - name: Install Electron & Packaging Suite
+      - name: Install Windows Desktop Packaging Suite
         run: |
           npm install --save-dev electron electron-builder --legacy-peer-deps
 
