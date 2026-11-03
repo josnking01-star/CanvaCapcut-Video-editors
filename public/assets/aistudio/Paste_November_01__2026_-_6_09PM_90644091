@@ -1,0 +1,1447 @@
+# ULTIMATE MASTER DEVELOPMENT PROMPT
+# PROJECT: CANVA + CAPCUT + UNIVERSAL BULK VIDEO AUTOMATION
+## Complete Professional Desktop Software | Windows EXE | Owner Admin Panel | Commercial Licensing
+
+---
+
+# PART 1 — YOUR ROLE AND MAIN OBJECTIVE
+
+Act as a senior software architect, full-stack developer, desktop application engineer, video editing specialist, UI/UX designer, AI integration engineer, database engineer, DevOps engineer and professional QA testing engineer.
+
+Your responsibility is to develop a complete, commercial-grade desktop application that combines the most important practical features of:
+
+1. Canva — Graphic design, templates, layouts and visual editing.
+2. CapCut — Professional video editing, timeline, transitions, effects and audio.
+3. Universal Bulk Automation — Spreadsheet-based automatic video creation.
+4. AI Media Generation — Background images, video footage and other AI-powered content.
+5. Commercial Software Management — Owner dashboard, customer management and licensing.
+
+The final application must be a real, fully functional Windows desktop application.
+
+This is NOT a simple website, static dashboard, frontend prototype or basic video generator.
+
+The application must be professionally developed, tested, packaged and prepared for commercial distribution.
+
+**MOST IMPORTANT DEVELOPMENT RULE:**
+
+Do not stop development after creating the user interface.
+
+Do not declare the project complete while important features are missing, buttons are non-functional, workflows are incomplete, tests are failing or critical errors remain unresolved.
+
+Continue implementation, debugging, testing and optimization until all agreed acceptance criteria have been satisfied.
+
+---
+
+# PART 2 — FIRST INSPECT THE EXISTING PROJECT
+
+Before writing or modifying code:
+
+1. Inspect the complete existing project.
+2. Understand its current programming languages and architecture.
+3. Inspect every existing screen and component.
+4. Inspect all existing bulk creation functionality.
+5. Identify existing Excel and CSV import workflows.
+6. Identify existing database structures.
+7. Understand how templates and dynamic elements currently work.
+8. Identify all working features that must be preserved.
+
+Do not unnecessarily rewrite an existing working system.
+
+Do not delete existing functionality.
+
+Do not replace working features with dummy interfaces.
+
+Integrate new functionality into the existing application wherever practical.
+
+If an architectural change is necessary, explain why and preserve the existing functionality.
+
+---
+
+# PART 3 — UNIVERSAL DATA-INDEPENDENT BULK ENGINE
+
+This is one of the most important systems in the entire application.
+
+The bulk creation engine must be completely independent of any particular content category or spreadsheet structure.
+
+It must NOT be designed specifically for quizzes, medical questions, motivational content or any other single category.
+
+Users must be able to create videos using any kind of structured data.
+
+Examples:
+
+- Medical quizzes.
+- Educational quizzes.
+- Motivational videos.
+- Facts and information videos.
+- Storytelling videos.
+- History videos.
+- Islamic educational content.
+- Science videos.
+- Business videos.
+- News and information videos.
+- Product advertisements.
+- Social media videos.
+- Custom user-created content.
+
+The system must not require a predefined Excel format.
+
+## A. Dynamic Spreadsheet Import
+
+Support:
+
+- Excel XLSX.
+- Excel XLS where supported.
+- CSV.
+- Custom structured data.
+- Multiple worksheets.
+- Variable columns.
+- Variable rows.
+- Optional fields.
+- Empty cells.
+- Custom field names.
+
+The number of columns must not be fixed.
+
+The number of rows must not be fixed.
+
+The application should support 10, 30, 100, 1,000 or more records depending on available hardware, storage and rendering capacity.
+
+Do not impose arbitrary small limits.
+
+## B. Automatic Column Detection
+
+When users upload a spreadsheet:
+
+1. Read the spreadsheet structure.
+2. Detect available columns.
+3. Display all columns.
+4. Display sample rows.
+5. Allow automatic field detection.
+6. Allow manual field mapping.
+7. Allow custom field creation.
+8. Allow users to skip unused columns.
+9. Allow users to validate their data.
+10. Save mapping configurations for reuse.
+
+## C. Universal Variable Mapping
+
+Allow any imported column to connect to any supported dynamic template element.
+
+For example:
+
+Excel column: Video_Title
+
+Template element: Main Heading
+
+Excel column: Background_Prompt
+
+Template element: Background Media
+
+Excel column: Description
+
+Template element: Subtitle
+
+These are examples only.
+
+Users must be able to create their own mappings.
+
+## D. Bulk Generation Controls
+
+Include:
+
+- Generate all records.
+- Generate selected records.
+- Generate a selected range.
+- Skip individual records.
+- Preview records.
+- Pause generation.
+- Resume generation.
+- Cancel generation.
+- Retry failed records.
+- Track progress.
+- Display successful records.
+- Display failed records.
+- Export individual videos.
+- Export all generated videos.
+- Download all outputs as ZIP.
+
+## E. Large-Scale Processing
+
+For large jobs, implement:
+
+- Background job processing.
+- Rendering queues.
+- Configurable worker count.
+- Memory management.
+- CPU/GPU resource management.
+- Job persistence.
+- Crash recovery where possible.
+- Retry mechanisms.
+- Progress tracking.
+- Batch processing.
+- Disk space monitoring.
+
+Do not attempt to render 1,000 full-resolution videos simultaneously in browser memory.
+
+Use efficient background rendering workers.
+
+---
+
+# PART 4 — DYNAMIC AND FIXED ELEMENTS SYSTEM
+
+This feature is mandatory.
+
+Whenever a user creates a new template, they must decide which elements are dynamic and which are fixed.
+
+Every supported template element must have an editable data behavior setting.
+
+## A. Dynamic Elements
+
+Dynamic elements can receive new values from bulk data.
+
+Examples:
+
+- Main heading.
+- Subtitle.
+- Description.
+- Question.
+- Answers.
+- Numbers.
+- Images.
+- Background images.
+- Background videos.
+- Audio files.
+- Other supported media.
+- Custom text fields.
+
+## B. Fixed Elements
+
+Fixed elements remain identical across every generated video.
+
+Examples:
+
+- Logo.
+- Brand watermark.
+- Decorative shapes.
+- Fixed headings.
+- Background music.
+- Fixed animations.
+- Static design elements.
+
+## C. Element-Level Controls
+
+For every element, provide:
+
+- Dynamic / Fixed selector.
+- Variable mapping.
+- Default value.
+- Missing-data behavior.
+- Formatting settings.
+- Preview.
+- Locking.
+- Visibility controls.
+
+## D. Important Rules
+
+1. Bulk generation must replace only selected dynamic elements.
+2. Fixed elements must remain unchanged.
+3. Dynamic elements must retain their original formatting.
+4. Text positions must not change unexpectedly.
+5. Animations and transitions must remain intact.
+6. Every generated video must be an independent project copy.
+7. The original template must never be overwritten.
+8. Users must be able to change element behavior later.
+
+---
+
+# PART 5 — UNIQUE BACKGROUND FOR EVERY GENERATED VIDEO
+
+This is a critical additional feature.
+
+Users must be able to assign different backgrounds to every video generated from one template.
+
+## A. Background Types
+
+Support:
+
+- AI-generated background images.
+- AI-generated background videos.
+- Uploaded images.
+- Uploaded video footage.
+- Previously saved media.
+- Custom background prompts.
+
+## B. Background Prompt System
+
+Provide a dedicated background configuration interface.
+
+Users can enter prompts such as:
+
+"Beautiful cinematic mountains, green nature scenery, flowing river, professional camera quality and soft sunlight."
+
+Allow users to configure:
+
+- Background type.
+- Image or video.
+- Prompt.
+- Visual style.
+- Aspect ratio.
+- Duration.
+- Quality.
+- Negative prompt where supported.
+- AI provider.
+- Randomization.
+- Manual selection.
+
+## C. Independent Background Assignment
+
+When bulk generation starts:
+
+- Video 1 receives background A.
+- Video 2 receives background B.
+- Video 3 receives background C.
+- Video 4 receives background D.
+
+Continue for every generated record.
+
+Support multiple assignment modes:
+
+1. One background per record.
+2. Random background selection.
+3. Sequential background selection.
+4. Spreadsheet-based background mapping.
+5. Individual manual background selection.
+6. AI-generated unique backgrounds.
+
+Avoid unnecessary background repetition when enough assets are available.
+
+If a user supplies a different prompt for every row, use the corresponding prompt for that row.
+
+If a prompt is missing, follow the user's configured fallback behavior.
+
+## D. Background Preservation
+
+Background replacement must not affect:
+
+- Text positions.
+- Text colors.
+- Font sizes.
+- Animations.
+- Transitions.
+- Other media elements.
+- Timeline structure.
+- Template dimensions.
+
+The background should be independently assigned while maintaining the original template design.
+
+---
+
+# PART 6 — COMPLETE CANVA-STYLE DESIGN EDITOR
+
+Develop a professional graphic design editor.
+
+## A. Templates
+
+- Ready-made templates.
+- Custom templates.
+- Template categories.
+- Social media templates.
+- Video templates.
+- Custom dimensions.
+- Save templates.
+- Duplicate templates.
+- Rename templates.
+- Delete templates.
+- Template preview.
+- Reusable template library.
+
+## B. Text Tools
+
+- Add text.
+- Edit text.
+- Custom fonts.
+- Font size.
+- Font color.
+- Font weight.
+- Alignment.
+- Letter spacing.
+- Line height.
+- Text background.
+- Text outline.
+- Text shadow.
+- Text opacity.
+- Text rotation.
+- Text positioning.
+- Text animations.
+
+## C. Visual Elements
+
+- Shapes.
+- Icons.
+- Stickers.
+- Decorative graphics.
+- Uploaded images.
+- Backgrounds.
+- Frames.
+- Borders.
+- Shadows.
+- Transparency.
+- Cropping.
+- Masking.
+- Layer management.
+
+## D. Canvas Editing
+
+- Drag and drop.
+- Resize.
+- Rotate.
+- Align.
+- Distribute.
+- Group.
+- Ungroup.
+- Duplicate.
+- Lock.
+- Unlock.
+- Copy.
+- Paste.
+- Delete.
+- Undo.
+- Redo.
+- Zoom.
+- Snap guides.
+- Grid guides.
+
+## E. Professional Design Controls
+
+Provide accurate element positioning, scaling, alignment and formatting.
+
+Preserve the design when switching between preview and export.
+
+---
+
+# PART 7 — COMPLETE CAPCUT-STYLE VIDEO EDITOR
+
+Create a professional video editing environment.
+
+## A. Multi-Track Timeline
+
+Support:
+
+- Multiple video tracks.
+- Multiple image tracks.
+- Multiple audio tracks.
+- Text tracks.
+- Subtitle tracks.
+- Overlay tracks.
+- Timeline zoom.
+- Clip trimming.
+- Clip splitting.
+- Clip duplication.
+- Clip movement.
+- Clip deletion.
+- Track visibility.
+- Track locking.
+
+## B. Video Editing
+
+- Crop.
+- Trim.
+- Split.
+- Resize.
+- Rotate.
+- Speed control.
+- Reverse playback.
+- Freeze frame.
+- Video filters.
+- Color correction.
+- Brightness.
+- Contrast.
+- Saturation.
+- Blur.
+- Chroma key.
+- Picture-in-picture.
+- Masking.
+- Pan and zoom.
+- Keyframes.
+
+## C. Transitions and Animations
+
+- Fade.
+- Dissolve.
+- Slide.
+- Zoom.
+- Wipe.
+- Other supported transitions.
+- Entrance animations.
+- Exit animations.
+- Loop animations.
+- Custom animation duration.
+- Keyframe-based movement.
+
+## D. Audio Tools
+
+- Audio upload.
+- Music library.
+- Voice-over.
+- Audio trimming.
+- Volume control.
+- Fade in.
+- Fade out.
+- Audio synchronization.
+- Multiple audio tracks.
+- Supported audio effects.
+
+## E. Subtitle Tools
+
+- Manual subtitles.
+- Automatic speech-to-text subtitles.
+- Subtitle timing.
+- Subtitle styling.
+- Custom fonts.
+- Highlighted words.
+- Subtitle animations.
+- Subtitle positioning.
+
+## F. Preview
+
+Provide a working real-time video preview.
+
+Include:
+
+- Play.
+- Pause.
+- Stop.
+- Timeline navigation.
+- Playback speed.
+- Preview resolution.
+- Full-screen preview.
+
+The preview must accurately represent the final rendered video.
+
+---
+
+# PART 8 — AI INTEGRATION
+
+Provide an AI integration management system.
+
+Supported functionality should include:
+
+- AI image generation.
+- AI video generation.
+- Background image generation.
+- Background video generation.
+- Text-to-speech.
+- Voice-over generation.
+- Automatic subtitles.
+- Background removal.
+- AI text assistance.
+- Prompt enhancement.
+
+Allow multiple providers where technically available.
+
+Provide configuration for:
+
+- API keys.
+- Provider selection.
+- Model selection.
+- Generation settings.
+- Usage monitoring.
+- Error reporting.
+
+Do not pretend an AI feature works without a connected service.
+
+If an API is required, implement the actual integration and clearly identify its configuration requirements.
+
+Never hardcode private API keys into the distributed application.
+
+---
+
+# PART 9 — MEDIA LIBRARY
+
+Build a central asset management system.
+
+Include:
+
+- Image uploads.
+- Video uploads.
+- Audio uploads.
+- Background media.
+- Search.
+- Filters.
+- Categories.
+- Preview.
+- Rename.
+- Delete.
+- Replace.
+- Recently used assets.
+- Favorites.
+- Reusable assets.
+
+Allow media to be reused across different projects.
+
+---
+
+# PART 10 — PROJECT MANAGEMENT
+
+Create a complete project management system.
+
+Features:
+
+- New project.
+- Save project.
+- Open project.
+- Rename project.
+- Duplicate project.
+- Delete project.
+- Autosave.
+- Project recovery.
+- Project history.
+- Template management.
+- Export history.
+- Project backup.
+- Import project.
+- Export project.
+
+Project files should preserve all editable information, including:
+
+- Layers.
+- Timeline.
+- Media references.
+- Element properties.
+- Dynamic mappings.
+- Fixed settings.
+- Animations.
+- Effects.
+- Transitions.
+- Export settings.
+
+---
+
+# PART 11 — PROFESSIONAL EXPORT SYSTEM
+
+Support:
+
+**Video formats**
+- MP4.
+- MOV where supported.
+- Other technically supported formats.
+
+**Image formats**
+- PNG.
+- JPG.
+- WebP where supported.
+
+**Video quality**
+- 720p.
+- 1080p.
+- 1440p where supported.
+- 4K where supported.
+
+**Frame rates**
+- 24 FPS.
+- 25 FPS.
+- 30 FPS.
+- 50 FPS.
+- 60 FPS.
+
+Additional controls:
+
+- Aspect ratio.
+- Bitrate.
+- Audio quality.
+- Resolution.
+- Output location.
+- File naming.
+- Individual exports.
+- Bulk exports.
+- ZIP packaging.
+
+Use a reliable rendering engine.
+
+Ensure the final exported media matches the editor's intended design and timeline.
+
+---
+
+# PART 12 — APPLICATION DASHBOARD AND UI/UX
+
+Develop a polished desktop interface.
+
+## Main Dashboard
+
+Include:
+
+- Recent projects.
+- Create project.
+- Templates.
+- Video editor.
+- Design editor.
+- Bulk video creator.
+- Media library.
+- AI tools.
+- Export history.
+- Settings.
+- Help and documentation.
+
+## Main Editor Layout
+
+**Left Sidebar**
+- Templates.
+- Elements.
+- Text.
+- Uploads.
+- Media.
+- Backgrounds.
+- Effects.
+- Tools.
+
+**Center**
+- Main canvas.
+- Video preview.
+- Design workspace.
+
+**Right Sidebar**
+- Element properties.
+- Dynamic/fixed settings.
+- Position.
+- Size.
+- Animation.
+- Effects.
+- Formatting.
+
+**Bottom**
+- Professional timeline.
+- Multiple tracks.
+- Playback controls.
+
+**Top Toolbar**
+- Save.
+- Undo.
+- Redo.
+- Preview.
+- Project settings.
+- Export.
+
+Design must be responsive to supported desktop screen sizes.
+
+Avoid overcrowding.
+
+---
+
+# PART 13 — OWNER / ADMIN CONTROL PANEL
+
+THIS IS A MAJOR REQUIREMENT.
+
+I want to own this software and sell it to other people.
+
+Create a separate, secure Owner/Admin Panel that gives the software owner control over commercial distribution, customer access and application configuration.
+
+The owner panel must be separate from the ordinary customer editing interface.
+
+## A. Owner Dashboard
+
+Display:
+
+- Total registered customers.
+- Active licenses.
+- Expired licenses.
+- Suspended licenses.
+- Trial users.
+- Software versions.
+- Customer activity.
+- License statistics.
+- Sales records where integrated.
+- System health.
+- Error reports.
+
+## B. Customer Management
+
+The owner should be able to:
+
+- Add customers.
+- Register customers.
+- View customer details.
+- Edit customer details.
+- Activate accounts.
+- Deactivate accounts.
+- Suspend accounts.
+- Restore accounts.
+- Delete accounts where appropriate.
+- Assign licenses.
+- Extend subscriptions.
+- Manage expiry dates.
+- View customer license status.
+
+## C. License Management
+
+Build a professional licensing system.
+
+Support:
+
+- Lifetime licenses.
+- Monthly licenses.
+- Yearly licenses.
+- Trial licenses.
+- Custom-duration licenses.
+- License activation.
+- License renewal.
+- License revocation.
+- License transfer.
+- Device activation limits.
+- License usage tracking.
+
+Generate unique license keys securely.
+
+A customer should be able to activate the software using their assigned license.
+
+## D. Device Management
+
+Allow the owner to:
+
+- View activated devices.
+- Set device limits.
+- Revoke device activations.
+- Reset device activations.
+- View activation history.
+
+Use secure device registration without exposing sensitive hardware identifiers unnecessarily.
+
+## E. Software Feature Control
+
+Allow the owner to configure which features are available to customers.
+
+Examples:
+
+- Canva-style editor.
+- CapCut-style editor.
+- Bulk generation.
+- AI image generation.
+- AI video generation.
+- Premium templates.
+- Advanced export.
+- Other premium features.
+
+Implement proper feature permissions.
+
+## F. Branding and White-Label Settings
+
+The owner should be able to customize:
+
+- Software name.
+- Application logo.
+- Application icon.
+- Brand colors.
+- Login screen.
+- About screen.
+- Owner information.
+- Support email.
+- Website.
+- Customer-facing branding.
+
+Where practical, support customer-specific branding.
+
+## G. Subscription and Commercial Management
+
+Include a configurable system for:
+
+- Product plans.
+- License plans.
+- Subscription durations.
+- Customer records.
+- Payment status.
+- Invoice records.
+- License renewals.
+
+Payment processing must use a real payment provider if integrated.
+
+Do not mark payments successful without verified payment confirmation.
+
+## H. Admin Security
+
+Implement:
+
+- Secure administrator authentication.
+- Password hashing.
+- Role-based permissions.
+- Session management.
+- Login attempt protection.
+- Audit logs.
+- Backup and recovery.
+- Secure license verification.
+
+Never expose owner credentials inside the customer application.
+
+Customers must not be able to access the owner panel through ordinary user accounts.
+
+## I. Offline Licensing
+
+Support an appropriate offline activation mechanism if practical.
+
+For offline customers, implement signed license files or another secure verification method with configurable activation and expiration rules.
+
+Clearly distinguish offline and online license status.
+
+Do not pretend that online license revocation can instantly affect a permanently disconnected computer.
+
+---
+
+# PART 14 — WINDOWS DESKTOP APPLICATION
+
+The final product must be distributable as a Windows desktop application.
+
+Do not deliver only a web application or a development preview.
+
+Choose an appropriate desktop architecture based on the existing codebase.
+
+Possible technologies include:
+
+- Electron.
+- Tauri.
+- React.
+- TypeScript.
+- Node.js.
+- Python services where useful.
+- FFmpeg.
+- Appropriate media rendering libraries.
+- SQLite or another suitable database.
+
+Choose technologies based on actual functionality, performance and maintainability.
+
+## A. Required Windows Builds
+
+Create:
+
+1. Windows setup installer (.exe).
+2. Portable Windows executable package where technically feasible.
+3. Complete project ZIP.
+4. Source code ZIP.
+5. Required configuration examples.
+6. Documentation.
+7. Installation instructions.
+
+## B. Windows Installation
+
+The installer should:
+
+- Install the application.
+- Create desktop shortcuts.
+- Create start menu shortcuts.
+- Configure application files.
+- Initialize required databases.
+- Handle required dependencies.
+- Provide a clean uninstall process.
+
+## C. Local PC Compatibility
+
+The application should be designed to run on supported Windows PCs without requiring the user to install the development environment.
+
+Do not require customers to install:
+
+- Node.js.
+- Python development tools.
+- IDEs.
+- Source code dependencies.
+
+Bundle required runtime components where legally and technically possible.
+
+Provide clear system requirements.
+
+Test the installer on a clean Windows environment or virtual machine.
+
+Support Windows 10 and Windows 11 where the selected technologies permit.
+
+If different hardware or operating system dependencies exist, document them.
+
+## D. Portable Version
+
+Where practical, create a portable build that can run from a folder without a conventional installation.
+
+Store user data and project files safely.
+
+Do not silently delete user data during updates or uninstallation.
+
+## E. Media Engine Distribution
+
+If FFmpeg or another external media engine is used:
+
+- Package it appropriately.
+- Verify redistribution licenses.
+- Include required notices.
+- Document third-party dependencies.
+
+---
+
+# PART 15 — COMPLETE SOFTWARE SECURITY
+
+Implement professional security practices.
+
+Include:
+
+- Secure authentication.
+- Password hashing.
+- Protected configuration.
+- Secure API key storage.
+- Database validation.
+- File upload validation.
+- Access control.
+- Input sanitization.
+- Safe file handling.
+- Secure update verification.
+- License verification.
+- Backup management.
+
+Do not place secret keys, owner passwords or private credentials in frontend source code.
+
+Do not store sensitive customer information unnecessarily.
+
+---
+
+# PART 16 — AUTOMATIC UPDATES AND VERSION MANAGEMENT
+
+Create an application update mechanism.
+
+Features:
+
+- Current version.
+- Available version.
+- Update notifications.
+- Update download.
+- Update verification.
+- Safe installation.
+- Rollback where practical.
+- Release notes.
+
+Only install properly verified updates.
+
+Ensure updates do not destroy user projects, templates, media or database records.
+
+The owner should be able to manage release versions and supported customer updates.
+
+---
+
+# PART 17 — COMPLETE TESTING AND BUG FIXING
+
+THIS SECTION IS MANDATORY.
+
+Do not consider the application complete just because it launches.
+
+Test every major feature and complete user workflow.
+
+## A. Functional Testing
+
+Test:
+
+- Dashboard.
+- Template creation.
+- Template editing.
+- Text editing.
+- Image editing.
+- Video editing.
+- Timeline operations.
+- Audio operations.
+- Transitions.
+- Animations.
+- Dynamic elements.
+- Fixed elements.
+- Excel import.
+- CSV import.
+- Column mapping.
+- Background prompt mapping.
+- Background image generation.
+- Background video assignment.
+- Bulk generation.
+- Individual rendering.
+- Bulk export.
+- ZIP export.
+- Project saving.
+- Project loading.
+- Owner panel.
+- Customer management.
+- Licensing.
+- Application updates.
+
+## B. Bulk Testing
+
+Test with different spreadsheet structures.
+
+For example:
+
+- 10 records.
+- 30 records.
+- 100 records.
+- 500 records.
+- 1,000 records.
+
+Test:
+
+- Different column counts.
+- Different column names.
+- Missing values.
+- Empty rows.
+- Long text.
+- Special characters.
+- Different image formats.
+- Different video formats.
+- Missing background prompts.
+- Duplicate background prompts.
+
+Verify that the application handles invalid data correctly.
+
+## C. Unique Background Testing
+
+Create multiple videos from one template.
+
+Verify that:
+
+- Every row uses its correct background configuration.
+- Different prompts generate appropriate separate assets.
+- Background images are assigned correctly.
+- Background videos are assigned correctly.
+- No unexpected template changes occur.
+- Fixed elements remain fixed.
+- Dynamic elements update correctly.
+
+## D. Rendering Testing
+
+Test:
+
+- Video duration.
+- Audio synchronization.
+- Text positioning.
+- Font rendering.
+- Video aspect ratio.
+- Frame rate.
+- Transitions.
+- Animations.
+- Background replacement.
+- Export quality.
+
+Check exported files by opening and playing them.
+
+## E. Owner Panel Testing
+
+Test:
+
+- Administrator login.
+- Customer creation.
+- License creation.
+- License activation.
+- Expiration.
+- License revocation.
+- Device management.
+- Feature permissions.
+- Customer access restrictions.
+- Security controls.
+
+## F. Performance Testing
+
+Measure:
+
+- Startup time.
+- Memory usage.
+- CPU usage.
+- Rendering speed.
+- Storage usage.
+- Large project loading.
+- Bulk queue processing.
+
+Identify and fix performance bottlenecks.
+
+## G. Regression Testing
+
+After every significant code change, rerun relevant tests.
+
+Make sure new features do not break old features.
+
+## H. Mandatory Bug-Fixing Loop
+
+Follow this process:
+
+1. Implement a feature.
+2. Run its tests.
+3. Identify errors.
+4. Fix errors.
+5. Rerun failed tests.
+6. Run regression tests.
+7. Verify the actual user workflow.
+8. Move to the next feature only when the current feature meets its acceptance criteria.
+
+Repeat this process as many times as necessary.
+
+Do not hide errors.
+
+Do not skip failed tests.
+
+Do not disable tests just to achieve a successful build.
+
+Do not use fake test results.
+
+---
+
+# PART 18 — STRICT PROJECT COMPLETION POLICY
+
+This instruction overrides any tendency to stop after producing a partial application.
+
+Do not stop after:
+
+- Creating the dashboard.
+- Designing the editor.
+- Adding navigation.
+- Creating visual buttons.
+- Building a demo.
+- Implementing only the frontend.
+- Creating a basic bulk generator.
+- Generating a development build.
+
+Continue working until the entire agreed project is implemented and validated.
+
+If you encounter a problem:
+
+1. Identify the root cause.
+2. Investigate the issue.
+3. Implement a solution.
+4. Run the relevant tests again.
+5. Verify the correction.
+6. Document any remaining limitation.
+
+If an external API, paid service, API key or unavailable dependency prevents a particular feature from being fully operational:
+
+- Complete all possible implementation work.
+- Provide the integration structure.
+- Identify the exact missing dependency.
+- Provide configuration instructions.
+- Never falsely report the feature as complete.
+
+If a tool or environment cannot create the final Windows executable, do not pretend it has been created. Provide a reproducible Windows build workflow and identify what remains to be executed.
+
+Do not repeatedly run identical failed commands without changing the cause.
+
+Use efficient testing and debugging strategies.
+
+**PROJECT COMPLETION IS BASED ON VERIFIED FUNCTIONALITY, NOT THE NUMBER OF SCREENS OR THE AMOUNT OF CODE WRITTEN.**
+
+---
+
+# PART 19 — REQUIRED FINAL DELIVERABLES
+
+When development is complete, prepare a professional delivery package.
+
+## 1. Complete Application ZIP
+
+Include:
+
+- Application files.
+- Required assets.
+- Configuration examples.
+- Database initialization files.
+- Required runtime components.
+- Installation instructions.
+- Documentation.
+
+## 2. Windows EXE Installer
+
+Provide the actual compiled Windows setup executable.
+
+Example:
+
+CanvaCapcutStudio_Setup.exe
+
+## 3. Portable Application
+
+Provide a portable Windows build where feasible.
+
+Example:
+
+CanvaCapcutStudio_Portable.zip
+
+## 4. Complete Source Code ZIP
+
+Include:
+
+- Frontend source.
+- Backend source.
+- Desktop application source.
+- Database schema.
+- Rendering engine.
+- Bulk engine.
+- Admin panel.
+- Licensing system.
+- Build configuration.
+- Tests.
+
+## 5. Documentation
+
+Provide:
+
+- User guide.
+- Installation guide.
+- Template creation guide.
+- Bulk generation guide.
+- Excel/CSV mapping guide.
+- AI configuration guide.
+- Admin panel guide.
+- Licensing guide.
+- Troubleshooting guide.
+- Developer documentation.
+
+## 6. Testing Report
+
+Include:
+
+- Features tested.
+- Tests passed.
+- Tests failed.
+- Bugs fixed.
+- Performance results.
+- Known limitations.
+- Final build status.
+
+## 7. Final Delivery Summary
+
+Clearly identify:
+
+- Application version.
+- Build date.
+- Supported Windows versions.
+- System requirements.
+- Installation procedure.
+- Available features.
+- Required external services.
+- License requirements.
+
+Provide real download links to the generated ZIP and EXE files.
+
+Never provide fake or unverified download links.
+
+---
+
+# PART 20 — FINAL ACCEPTANCE CHECKLIST
+
+Do not mark the project as complete until the following checklist has been verified.
+
+[ ] Desktop application launches successfully.
+
+[ ] Canva-style design editor works.
+
+[ ] CapCut-style video editor works.
+
+[ ] Timeline editing works.
+
+[ ] Text, images and media editing work.
+
+[ ] Animations and transitions work.
+
+[ ] Universal Excel and CSV import works.
+
+[ ] Different spreadsheet structures work.
+
+[ ] Dynamic element mapping works.
+
+[ ] Fixed element preservation works.
+
+[ ] Independent background assignment works.
+
+[ ] Image background workflow works.
+
+[ ] Video background workflow works.
+
+[ ] AI integrations work when configured.
+
+[ ] Multiple video generation works.
+
+[ ] Large batch processing is tested.
+
+[ ] Rendering queue works.
+
+[ ] Pause and resume work.
+
+[ ] Failed jobs can be retried.
+
+[ ] Individual exports work.
+
+[ ] Bulk ZIP export works.
+
+[ ] Projects can be saved and reopened.
+
+[ ] Owner/Admin Panel works.
+
+[ ] Customer management works.
+
+[ ] License management works.
+
+[ ] Device management works.
+
+[ ] Application security checks pass.
+
+[ ] Windows installer builds successfully.
+
+[ ] Portable build is tested where supported.
+
+[ ] Complete source code ZIP is prepared.
+
+[ ] Documentation is complete.
+
+[ ] Critical and high-severity bugs are resolved.
+
+[ ] Regression tests pass.
+
+[ ] Final installation is tested on a clean supported Windows environment.
+
+[ ] All deliverables are verified and accessible.
+
+---
+
+# PART 21 — FINAL VISION
+
+The final software must be a professional, commercial-ready creative application.
+
+Its core identity is:
+
+CANVA + CAPCUT + UNIVERSAL BULK VIDEO GENERATOR + AI AUTOMATION + OWNER ADMIN PANEL.
+
+A customer should be able to:
+
+1. Open the desktop application.
+2. Create a professional video or graphic design.
+3. Use Canva-style design tools.
+4. Use CapCut-style editing tools.
+5. Create and save reusable templates.
+6. Select dynamic and fixed elements.
+7. Import any suitable Excel or CSV data.
+8. Map columns to template elements.
+9. Assign unique background image/video prompts.
+10. Generate 10, 100, 500 or 1,000+ videos depending on available resources.
+11. Preview each generated video.
+12. Export videos individually or in bulk.
+13. Save and reuse projects.
+
+The owner should be able to:
+
+1. Manage customers.
+2. Create and assign licenses.
+3. Control subscriptions.
+4. Manage device activations.
+5. Enable or disable premium features.
+6. Customize software branding.
+7. Manage application versions.
+8. Monitor software usage.
+9. Distribute the software commercially.
+
+## FINAL INSTRUCTION TO THE DEVELOPMENT AGENT
+
+Start by auditing the existing project.
+
+Then create a detailed implementation plan.
+
+After that, execute the implementation in logical phases.
+
+Do not stop at planning or reporting.
+
+Actually build the application, integrate the features, test the workflows, fix bugs, rebuild and verify the final deliverables.
+
+Maintain a clear development checklist and update it as features are completed.
+
+Do not claim completion until all mandatory acceptance criteria have been tested.
+
+The final objective is not a prototype.
+
+**THE FINAL OBJECTIVE IS A REAL, PROFESSIONAL, FUNCTIONAL, TESTED, INSTALLABLE AND COMMERCIALLY DISTRIBUTABLE WINDOWS DESKTOP SOFTWARE PRODUCT.**

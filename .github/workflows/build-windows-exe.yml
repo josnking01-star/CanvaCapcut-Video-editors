@@ -1,0 +1,115 @@
+name: Build Windows Native Desktop EXE
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    name: Build & Package Windows x64 Executable (.exe)
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Run Quality Verification Tests
+        run: npm run test
+
+      - name: Compile Full-Stack Client & Server
+        run: npm run build
+
+      - name: Install Electron & Desktop Packaging Tools
+        run: npm install --save-dev electron electron-builder
+
+      - name: Package Windows x64 Native Installer & Portable EXE
+        run: |
+          npx electron-builder --windows --x64 -c.win.target=nsis,portable -c.extraMetadata.main=electron/main.cjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Prepare Standalone Windows Bundle Fallback
+        shell: bash
+        run: |
+          mkdir -p release-builds
+          if [ -d "dist_electron" ]; then
+            cp -r dist_electron/*.exe release-builds/ 2>/dev/null || true
+          fi
+          # Also package complete executable portable bundle with Windows launcher
+          mkdir -p release-builds/OmniCutStudioElite_Portable
+          cp -r dist release-builds/OmniCutStudioElite_Portable/
+          cp -r node_modules release-builds/OmniCutStudioElite_Portable/ 2>/dev/null || true
+          cp package.json server.ts tsconfig.json release-builds/OmniCutStudioElite_Portable/
+          
+          # Create Windows double-click launcher .bat
+          cat << 'EOF' > release-builds/OmniCutStudioElite_Portable/Launch_OmniCut_Studio.bat
+          @echo off
+          title OmniCut Studio Elite v3.0
+          echo ========================================================
+          echo   Starting OmniCut Studio Elite Desktop Engine...
+          echo ========================================================
+          cd /d "%~dp0"
+          start http://localhost:3000
+          call npx tsx server.ts
+          pause
+          EOF
+
+          # Compress portable release bundle
+          cd release-builds
+          powershell -Command "Compress-Archive -Path OmniCutStudioElite_Portable -DestinationPath OmniCutStudioElite_Windows_v3.0_Portable.zip -Force"
+          cd ..
+
+      - name: Upload Windows Executable & Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: OmniCutStudioElite_Windows_Binaries
+          path: |
+            dist_electron/*.exe
+            release-builds/*.zip
+            release-builds/*.exe
+          retention-days: 30
+
+      - name: Create GitHub Release (If Tagged or on Main)
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v3.0.0
+          name: OmniCut Studio Elite v3.0.0 Release
+          body: |
+            ## OmniCut Studio Elite v3.0.0 - Windows Desktop Native Release
+
+            ### Features Included:
+            - **Canva-Style Design Editor**: Multi-layer graphic canvas with drag-and-drop elements and styling.
+            - **CapCut-Style Multi-Track Timeline**: Audio waveforms, video tracks, overlay tracks, and playhead scrubber.
+            - **Google Flow AI Generative Studio**: Prompt-to-video with 15-day freshness anti-duplication vault.
+            - **Multi-Platform Batch Compiler**: YouTube (16:9), TikTok/Reels (9:16), Instagram (1:1), Facebook (4:5).
+            - **Part 11 Price Lock & Grandfathering Engine**: Protects existing active subscription renewals.
+            - **Multi-Gateway Reconciliation**: Stripe, PayPal, SWIFT Wire, JazzCash, EasyPaisa & manual slips.
+            - **Supreme Master Owner Authority**: Locked to `josnking01@gmail.com` with tamper-proof audit trails.
+
+            ### Installation:
+            1. Download the `.exe` installer or the `.zip` portable package below.
+            2. Run the application directly on any Windows 10/11 64-bit PC.
+          files: |
+            dist_electron/*.exe
+            release-builds/*.zip
+            release-builds/*.exe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true

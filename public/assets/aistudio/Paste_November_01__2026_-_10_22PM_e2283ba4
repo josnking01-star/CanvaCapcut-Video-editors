@@ -1,0 +1,1432 @@
+# ULTIMATE MASTER PROMPT — COMPLETE DESKTOP SOFTWARE + OWNER ADMIN PANEL
+
+## ROLE & RESPONSIBILITY
+
+Act as a Senior Software Architect, Full-Stack Developer, Desktop Application Engineer, UI/UX Designer, Database Architect, Cybersecurity Engineer, QA Automation Engineer, and Commercial Software Product Manager.
+
+Your responsibility is to inspect, develop, complete, test, secure, and package my entire application as a professional commercial-grade Windows Desktop Application.
+
+Do not behave like an assistant who only gives suggestions or sample code. Work on the actual project files and implement the complete working application.
+
+**The final product must be usable, installable, maintainable, secure, and ready for commercial distribution.**
+
+---
+
+# PART 1 — PROJECT COMPLETION RULES
+
+1. First inspect the entire existing project, its source code, folders, dependencies, database, UI, and current functionality.
+2. Understand the existing architecture before making changes.
+3. Preserve all working features.
+4. Do not unnecessarily rewrite or remove existing functionality.
+5. Identify incomplete modules, bugs, missing functionality, security weaknesses, and architectural problems.
+6. Create a clear development plan, then execute it.
+7. Do not stop after creating a UI prototype. Every important button, form, menu, action, report, and workflow must work.
+8. Do not use fake data as a substitute for real functionality.
+9. Do not leave unfinished buttons, placeholder pages, TODO comments, dummy APIs, or nonfunctional modules in the final release.
+10. Implement proper error handling, validation, loading indicators, success messages, and failure messages.
+11. Test the application repeatedly after implementing each major module.
+12. Fix issues discovered during testing before proceeding.
+13. Continue development until all agreed requirements and mandatory acceptance tests pass.
+14. Never claim that a feature works unless it has actually been implemented and tested.
+15. Maintain a development checklist and mark each feature complete only after verification.
+
+If something is technically impossible, explain the limitation and implement the safest practical alternative instead of pretending it works.
+
+---
+
+# PART 2 — APPLICATION TYPE & DELIVERY
+
+Build a professional Windows Desktop Application.
+
+### Required deliverables
+
+- Complete application source code.
+- Production-ready Windows EXE.
+- Windows installer (Setup EXE or MSI).
+- Complete project ZIP.
+- Owner Admin Panel.
+- Customer application interface.
+- Database schema and migrations.
+- Configuration templates.
+- Required dependencies and installation instructions.
+- User manual.
+- Owner/Admin manual.
+- Troubleshooting guide.
+- Backup and recovery guide.
+- Release notes.
+- Final testing and security report.
+
+The application must be installable and runnable on another compatible Windows PC without requiring the development environment.
+
+Provide appropriate application icon, desktop shortcut, Start Menu shortcut, installer, uninstaller, and data-preservation options.
+
+Do not assume that one EXE can run on every operating system. Clearly specify the supported Windows versions and required dependencies.
+
+Never include private signing keys, payment secrets, master credentials, or server secrets inside the customer EXE.
+
+---
+
+# PART 3 — BULK CONTENT GENERATION SYSTEM
+
+Develop a universal and scalable Bulk Content Generation System.
+
+It must support different types of content instead of being limited to one specific niche.
+
+### Supported content categories
+
+- Medical quizzes.
+- General knowledge quizzes.
+- Educational content.
+- Motivational content.
+- Facts and information.
+- Stories.
+- News-related content.
+- Questions and answers.
+- Social media posts.
+- Custom user-defined content.
+- Any future content category.
+
+### Dynamic bulk data engine
+
+The system must support:
+
+- CSV import.
+- Excel/XLSX import.
+- JSON import.
+- Manual data entry.
+- Copy-paste bulk data.
+- Custom column mapping.
+- Custom fields.
+- Dynamic row and column detection.
+- Different data structures for different projects.
+- Large batch processing from 10 to 1,000+ records, subject to system resources and configurable limits.
+
+Do not hardcode one fixed column structure for every content type.
+
+Allow the user to map imported columns to application fields.
+
+### Template Management
+
+Create a professional template editor.
+
+Users must be able to:
+
+- Create templates.
+- Edit templates.
+- Duplicate templates.
+- Save templates.
+- Delete templates.
+- Preview templates.
+- Import and export templates.
+- Manage multiple templates for different content categories.
+
+### Dynamic and Fixed Elements
+
+Every template element must have an independently configurable status:
+
+**Dynamic Element:**
+- Can receive different data for each generated item.
+- Can be mapped to imported columns or custom fields.
+- Can change its text, image, or other supported content.
+
+**Fixed Element:**
+- Must remain unchanged during bulk generation.
+- Its position, styling, font, size, background, and other settings must remain protected.
+
+The user must decide which elements are Dynamic and which are Fixed.
+
+During bulk generation, replace only selected Dynamic elements.
+
+Never overwrite the original template. Always preserve the original and generate separate output copies.
+
+### Bulk Processing
+
+Implement:
+
+- Batch queue.
+- Processing progress.
+- Total records.
+- Completed records.
+- Failed records.
+- Remaining records.
+- Pause.
+- Resume.
+- Cancel.
+- Retry failed items.
+- Automatic error reporting.
+- Duplicate detection.
+- Input validation.
+- Preview before processing.
+- Output preview.
+- Batch history.
+- Export generated files.
+- ZIP packaging.
+
+A failure in one record must not unnecessarily stop the entire batch.
+
+Provide clear information about failed records and allow the user to retry them.
+
+### Export
+
+Support the relevant output formats for the application's actual content types, including:
+
+- PNG.
+- JPG/JPEG.
+- PDF.
+- CSV.
+- XLSX.
+- JSON.
+- ZIP containing generated files.
+
+Use correct file naming and folder organization.
+
+---
+
+# PART 4 — PROFESSIONAL APPLICATION UI/UX
+
+Create a modern, professional, responsive desktop interface.
+
+### Design requirements
+
+- Clean dashboard.
+- Modern sidebar navigation.
+- Professional icons.
+- Consistent colors and typography.
+- Proper spacing and alignment.
+- Light and dark themes.
+- Attractive cards and tables.
+- Search and filters.
+- Pagination.
+- Sorting.
+- Confirmation dialogs.
+- Form validation.
+- Notifications and alerts.
+- Helpful empty states.
+- Loading indicators.
+- Error messages.
+- Keyboard accessibility where practical.
+
+The application must look like a finished commercial product, not a basic developer prototype.
+
+Use a consistent design system across the customer application and Owner Admin Panel.
+
+---
+
+# PART 5 — OWNER ADMIN PANEL
+
+Develop a complete, professional Owner Admin Panel.
+
+This is the central control system for managing the software business.
+
+The Owner Panel must manage:
+
+- Application settings.
+- Customers.
+- Super Admins.
+- Employees.
+- Products.
+- Editions.
+- Subscription plans.
+- Subscription purchases.
+- Pricing.
+- Price locks.
+- Payments.
+- Discounts.
+- Coupons.
+- Licenses.
+- Devices.
+- Orders.
+- Invoices.
+- Revenue.
+- Support.
+- Software updates.
+- Security.
+- Backups.
+- Database operations.
+- Audit logs.
+- System health.
+
+Do not create a decorative Owner Panel. All permitted operations must work through properly secured backend services.
+
+---
+
+# PART 6 — MASTER OWNER ACCOUNT
+
+Create a unique Master Owner account.
+
+The Master Owner must have ultimate authority over the application and its commercial business.
+
+### Master Owner capabilities
+
+- View the complete system.
+- Manage all customers.
+- Create Super Admin accounts.
+- Assign and remove administrative permissions.
+- Manage products and plans.
+- Change subscription prices.
+- Approve price changes.
+- Manage payments and refunds.
+- Create discounts and coupons.
+- Manage licenses.
+- Manage software updates.
+- Manage backups.
+- Configure security.
+- View all audit logs.
+- Manage business settings.
+- Manage all administrative accounts.
+
+### Owner protection
+
+No Super Admin, Admin, Employee, or Customer may:
+
+- Delete the Master Owner.
+- Disable the Master Owner.
+- Change Master Owner credentials.
+- Transfer ownership.
+- Override protected Owner permissions.
+- Access private Owner credentials.
+- Modify protected security settings without authorization.
+
+Implement secure Owner authentication, password recovery, optional two-factor authentication, session management, and login alerts.
+
+The Owner must remain the ultimate authority even when multiple Super Admins exist.
+
+---
+
+# PART 7 — SUPER ADMIN & EMPLOYEE MANAGEMENT
+
+The Master Owner must be able to create multiple Super Admin accounts.
+
+### Admin operations
+
+- Create.
+- Edit.
+- Activate.
+- Deactivate.
+- Suspend.
+- Restore.
+- Delete.
+- Reset credentials.
+- Assign roles.
+- Assign permissions.
+- Set access expiry.
+- View login history.
+- Revoke sessions.
+
+### Roles
+
+Support configurable roles such as:
+
+- Master Owner.
+- Super Admin.
+- Admin.
+- Manager.
+- Employee.
+- Customer.
+
+### Granular permissions
+
+Provide individual permissions for:
+
+- View.
+- Create.
+- Edit.
+- Delete.
+- Export.
+- Approve.
+- Suspend.
+- Restore.
+- Refund.
+- Manage payments.
+- Manage pricing.
+- Manage subscriptions.
+- Manage licenses.
+- Manage customers.
+- Manage other administrators.
+
+The Owner must be able to assign permissions individually or through predefined role templates.
+
+Super Admins must only access the modules and actions explicitly permitted by the Owner.
+
+Enforce permissions on the backend, not only by hiding UI buttons.
+
+Maintain an audit log of administrative actions.
+
+---
+
+# PART 8 — CUSTOMER MANAGEMENT
+
+Create a complete customer management module.
+
+### Customer information
+
+Store:
+
+- Unique Customer ID.
+- Name.
+- Email.
+- Contact information, where provided.
+- Account creation date.
+- Account status.
+- Purchase history.
+- Subscription history.
+- License history.
+- Device history.
+- Payment history.
+- Invoice history.
+- Discount history.
+- Support history.
+- Account notes.
+
+### Customer operations
+
+- Create customer.
+- Edit customer.
+- View profile.
+- Activate account.
+- Deactivate account.
+- Suspend account.
+- Restore account.
+- Delete account according to retention and legal requirements.
+- Reset password securely.
+- View subscription.
+- View payment history.
+- View active devices.
+- Extend subscription.
+- Apply approved discount.
+- Assign custom price.
+- Grant complimentary access.
+- Export customer records.
+
+Implement proper customer data isolation.
+
+One customer must never be able to access another customer's private records.
+
+---
+
+# PART 9 — PRODUCT & EDITION MANAGEMENT
+
+Allow the Owner to manage multiple products and editions.
+
+Examples:
+
+- Basic.
+- Standard.
+- Professional.
+- Enterprise.
+- Custom Edition.
+
+For each product or edition, support:
+
+- Product name.
+- Description.
+- Version.
+- Features.
+- Subscription plans.
+- Pricing.
+- Device limits.
+- User limits.
+- Usage limits.
+- Storage limits.
+- Availability.
+- Trial availability.
+- License requirements.
+
+The Owner must be able to enable, disable, create, edit, and archive products and editions.
+
+---
+
+# PART 10 — SUBSCRIPTION MANAGEMENT
+
+Build a complete subscription management system.
+
+### Subscription plans
+
+Support:
+
+- Free.
+- Trial.
+- Weekly.
+- Monthly.
+- Quarterly.
+- Half-yearly.
+- Yearly.
+- Lifetime.
+- Custom duration.
+
+### Subscription operations
+
+- Create plan.
+- Edit plan.
+- Activate.
+- Suspend.
+- Cancel.
+- Renew.
+- Extend.
+- Upgrade.
+- Downgrade.
+- Pause.
+- Resume.
+- Change billing cycle.
+- Configure expiry.
+- Configure auto-renew.
+- Configure grace period.
+
+### Subscription information
+
+Every subscription must store:
+
+- Subscription ID.
+- Customer ID.
+- Product ID.
+- Plan ID.
+- Purchase date.
+- Start date.
+- Expiry date.
+- Billing cycle.
+- Original agreed price.
+- Currency.
+- Discount.
+- Tax.
+- Final amount.
+- Renewal settings.
+- Pricing version.
+- Subscription status.
+
+Preserve historical subscription records even after cancellation or expiration.
+
+---
+
+# PART 11 — ADVANCED PRICE LOCK & GRANDFATHERED PRICING
+
+This module is mandatory and must be implemented correctly.
+
+The application must distinguish between existing subscriptions and new subscription purchases.
+
+## A. Existing customers' active subscriptions
+
+When the Owner increases the global subscription price:
+
+- Existing active subscriptions must retain their original agreed price.
+- Their existing renewal price must remain unchanged by default.
+- A global pricing update must never silently increase their subscription price.
+- Existing customers must retain their agreed pricing according to the applicable price-lock policy.
+
+## B. New subscription purchases
+
+Whenever the Owner publishes a new price:
+
+- Every new subscription purchase made after the new price's effective date must use the latest active price.
+- A customer purchasing their first subscription must receive the latest price.
+- An existing customer purchasing a completely new subscription must also receive the latest price for that new purchase.
+- An existing customer purchasing a different plan must receive the current price of that newly purchased plan.
+- Historical purchases must retain their original recorded prices.
+
+**IMPORTANT BUSINESS RULE: New subscription purchase = latest active price. Existing subscription renewal = protected agreed price by default.**
+
+## C. Renewal pricing controls
+
+The Owner must be able to configure:
+
+1. Keep the original agreed price.
+2. Apply a new approved renewal price.
+3. Apply a scheduled price change.
+4. Apply a customer-specific negotiated price.
+
+A protected existing subscription must not change its renewal price without the configured approval process.
+
+## D. Price lock settings
+
+Allow the Owner to configure:
+
+- Lifetime price lock.
+- Fixed-duration price lock.
+- Custom-duration price lock.
+- Customer-specific price lock.
+- Plan-specific price lock.
+- Subscription-specific price lock.
+- Renewal price protection.
+- Grandfathered pricing eligibility.
+
+## E. Pricing management
+
+Allow the Owner to:
+
+- Increase or decrease prices.
+- Create new pricing versions.
+- Schedule future prices.
+- Set different prices for different currencies.
+- Set prices for different plans.
+- Update new-customer pricing.
+- Exempt selected customers.
+- Configure existing-customer renewal policies.
+- Perform bulk pricing updates safely.
+
+## F. Pricing history
+
+Record:
+
+- Previous price.
+- New price.
+- Currency.
+- Effective date.
+- Pricing version.
+- Customer ID.
+- Subscription ID.
+- Reason for change.
+- Approving Owner.
+- Date of approval.
+
+## G. Customer notifications
+
+Notify customers before an approved price increase takes effect, using configured notification channels.
+
+## H. Acceptance rules
+
+Test all of these cases:
+
+1. Existing customer with an active monthly subscription.
+2. Existing customer with an annual subscription.
+3. Existing customer renewing at the protected price.
+4. New customer purchasing after a price increase.
+5. Existing customer purchasing a completely new subscription after a price increase.
+6. Existing customer changing to a different plan.
+7. Customer with a lifetime subscription.
+8. Customer with a custom negotiated price.
+9. Bulk price update affecting multiple plans.
+10. Scheduled future price increase.
+
+Verify that new purchases use the latest active price and protected existing subscriptions retain their agreed price unless the Owner authorizes a change.
+
+---
+
+# PART 12 — PAYMENT MANAGEMENT
+
+Create a professional payment management system.
+
+### Supported payment methods
+
+Design the system to support configurable payment providers, including:
+
+- Credit and debit cards.
+- Stripe.
+- PayPal.
+- Bank transfer.
+- JazzCash.
+- EasyPaisa.
+- Other configurable payment methods.
+
+Only activate a payment gateway after the required merchant account, credentials, API configuration, and verification are completed.
+
+Do not pretend that a payment was received without confirmation from the gateway or authorized manual verification.
+
+### Payment statuses
+
+- Pending.
+- Processing.
+- Successful.
+- Failed.
+- Rejected.
+- Refunded.
+- Partially refunded.
+- Cancelled.
+
+### Payment operations
+
+- View payments.
+- Search transactions.
+- Filter by status.
+- Verify manual payments.
+- Approve or reject payment proof.
+- Add authorized manual payment records.
+- Record transaction IDs.
+- Record payment references.
+- Issue full refunds.
+- Issue partial refunds.
+- Generate receipts.
+- Export payment reports.
+
+Use secure payment-provider integrations and never store raw card details.
+
+---
+
+# PART 13 — DISCOUNTS & COUPONS
+
+Create a complete discount and coupon management module.
+
+### Discount types
+
+- Percentage discount.
+- Fixed amount discount.
+- First-purchase discount.
+- Renewal discount.
+- Annual-plan discount.
+- Lifetime-plan discount.
+- Customer-specific discount.
+- Promotional discount.
+- Bulk discount.
+
+### Coupon controls
+
+- Coupon code.
+- Discount amount.
+- Discount type.
+- Start date.
+- Expiry date.
+- Maximum uses.
+- Per-customer usage limit.
+- Minimum purchase amount.
+- Maximum discount amount.
+- Applicable plans.
+- Applicable products.
+- Selected customers.
+- New customers only.
+- Existing customers only.
+- Renewal only.
+- One-time use.
+- Unlimited use.
+
+Validate coupons on the backend and prevent concurrent requests from exceeding usage limits.
+
+Show the discount calculation clearly before purchase.
+
+Do not let discounts overwrite the original standard plan price or historical agreed subscription price.
+
+---
+
+# PART 14 — AUTOMATIC RENEWALS & RECURRING BILLING
+
+Support:
+
+- Monthly billing.
+- Quarterly billing.
+- Annual billing.
+- Automatic renewal.
+- Renewal reminders.
+- Expiry reminders.
+- Failed payment notifications.
+- Payment retry rules.
+- Grace periods.
+- Cancellation management.
+- Renewal history.
+
+Only perform automatic recurring charges when the customer has authorized the payment agreement and the payment provider supports the required operation.
+
+Provide clear cancellation and renewal controls.
+
+Never charge a customer without valid authorization.
+
+---
+
+# PART 15 — CUSTOMER-SPECIFIC CUSTOMIZATION
+
+The Owner must be able to:
+
+- Set a custom subscription price.
+- Apply a special discount.
+- Grant a free subscription.
+- Extend a trial.
+- Extend an expiry date.
+- Increase device limits.
+- Add premium features.
+- Upgrade a customer.
+- Provide complimentary access.
+- Lock a negotiated price.
+
+Require a reason for important manual changes.
+
+Record the administrator, approval, timestamp, and previous value.
+
+---
+
+# PART 16 — LICENSE MANAGEMENT
+
+Create a secure license management system.
+
+### License types
+
+- Trial.
+- Monthly.
+- Quarterly.
+- Half-yearly.
+- Yearly.
+- Lifetime.
+- Custom duration.
+
+### License operations
+
+- Generate license keys.
+- Generate keys in bulk.
+- Assign licenses.
+- Activate.
+- Deactivate.
+- Suspend.
+- Revoke.
+- Renew.
+- Extend.
+- Transfer.
+- Reset activation.
+- Set expiry.
+- Configure device limits.
+
+### Device management
+
+- View activated devices.
+- View device activation date.
+- Set device limits.
+- Remove authorized devices.
+- Detect unusual activation activity.
+- Manage device transfers.
+
+Use signed license entitlements and secure server-side validation.
+
+Never rely only on a hardcoded license key or a client-side check.
+
+---
+
+# PART 17 — ONLINE & OFFLINE FUNCTIONALITY
+
+Support a practical online/offline architecture.
+
+### Offline features
+
+Where technically appropriate, allow:
+
+- Local application usage.
+- Local content generation.
+- Local reports.
+- Local project files.
+- Local database access.
+- Local exports.
+- Local backups.
+
+### Online features
+
+Use secure online services for:
+
+- Account authentication.
+- Subscription verification.
+- Payment verification.
+- License validation.
+- Software updates.
+- Remote account management.
+- Synchronization.
+
+Implement signed offline license caching with a configurable expiry and grace period.
+
+Clearly explain that remote suspension or revocation cannot be guaranteed instantly while a device is completely offline.
+
+Synchronize data safely when connectivity returns.
+
+Prevent duplicate transactions and conflicting updates during synchronization.
+
+---
+
+# PART 18 — CUSTOMER APPLICATION INTERFACE
+
+Create a separate customer-facing interface.
+
+Customers must not see Owner-only functionality.
+
+### Customer features
+
+- Registration, if enabled.
+- Login.
+- Password recovery.
+- Profile management.
+- Subscription details.
+- Purchase new subscription.
+- View current pricing.
+- Payment history.
+- Invoice downloads.
+- License activation.
+- Device management.
+- Application updates.
+- Support requests.
+- Notifications.
+- Logout.
+
+Display the applicable price clearly before checkout.
+
+For new purchases, use the latest active price.
+
+For existing protected subscriptions, display their agreed renewal price separately from the current standard price.
+
+---
+
+# PART 19 — REVENUE & BUSINESS ANALYTICS
+
+Build a professional business analytics dashboard.
+
+Show:
+
+- Total revenue.
+- Daily revenue.
+- Monthly revenue.
+- Yearly revenue.
+- Monthly Recurring Revenue (MRR).
+- Annual Recurring Revenue (ARR).
+- New customers.
+- Active customers.
+- Inactive customers.
+- Active subscriptions.
+- Expired subscriptions.
+- Renewals.
+- Cancellations.
+- Churn rate.
+- Failed payments.
+- Refunds.
+- Discount usage.
+- Outstanding payments.
+- Revenue by product.
+- Revenue by plan.
+- Revenue by payment method.
+
+Use accurate calculations based on actual stored transactions.
+
+Distinguish gross revenue, refunds, discounts, taxes, and net revenue.
+
+Do not count pending payments as received revenue.
+
+---
+
+# PART 20 — ORDERS, INVOICES & TAX
+
+Implement:
+
+- Order management.
+- Unique order IDs.
+- Invoice generation.
+- Receipt generation.
+- PDF export.
+- Invoice history.
+- Billing information.
+- Discount breakdown.
+- Tax breakdown.
+- Refund records.
+- Payment references.
+- Invoice numbering.
+- Email delivery where configured.
+
+Make tax rates and tax rules configurable.
+
+Do not hardcode legal tax assumptions. Provide configuration appropriate to the applicable business jurisdiction and obtain professional verification where required.
+
+---
+
+# PART 21 — MARKETING & SALES
+
+Support:
+
+- Promotional campaigns.
+- Referral codes.
+- Affiliate tracking.
+- Seasonal discounts.
+- Flash sales.
+- Customer groups.
+- Promotional notifications.
+- Campaign reports.
+
+Track campaign performance using actual data.
+
+Do not send marketing communications without the required customer consent and applicable compliance settings.
+
+---
+
+# PART 22 — SUPPORT TICKET MANAGEMENT
+
+Create a complete support module.
+
+Customers can submit:
+
+- General questions.
+- Complaints.
+- Technical issues.
+- Bug reports.
+- Feature requests.
+- Payment problems.
+
+Administrators can:
+
+- View tickets.
+- Assign tickets.
+- Set priority.
+- Change status.
+- Reply.
+- Add internal notes.
+- Track resolution time.
+- View ticket history.
+
+---
+
+# PART 23 — SOFTWARE UPDATE MANAGEMENT
+
+The Owner must be able to:
+
+- Upload new software versions.
+- Set version numbers.
+- Add release notes.
+- Mark stable or beta versions.
+- Configure mandatory updates.
+- Configure optional updates.
+- Publish updates.
+- Schedule releases.
+- Roll back to a previous release where supported.
+
+Use signed update packages and verify their integrity before installation.
+
+Do not install untrusted update packages.
+
+Ensure updates do not silently destroy customer data or configuration.
+
+Provide a safe update and recovery mechanism.
+
+---
+
+# PART 24 — BACKUP & RESTORE
+
+Implement professional backup management.
+
+### Backup features
+
+- Manual backup.
+- Automatic backup.
+- Scheduled backup.
+- Database backup.
+- Configuration backup.
+- Customer data backup.
+- Backup history.
+- Backup verification.
+- Backup encryption.
+- Retention settings.
+
+### Restore features
+
+- Restore from a selected backup.
+- Validate backup integrity.
+- Create a safety backup before restoring.
+- Show restore progress.
+- Report errors.
+- Verify restored data.
+
+Never silently overwrite important customer data.
+
+Restrict restore operations to authorized administrators.
+
+---
+
+# PART 25 — SECURITY & DATA PROTECTION
+
+Security is mandatory.
+
+Implement:
+
+- Secure password hashing.
+- Strong authentication.
+- Optional two-factor authentication.
+- Role-based access control.
+- Backend permission enforcement.
+- Session expiration.
+- Login rate limiting.
+- Login alerts.
+- Audit logs.
+- Secure API authentication.
+- HTTPS for network communication.
+- Encryption of sensitive data.
+- Secure secret management.
+- Input validation.
+- SQL injection protection.
+- Cross-site scripting protection where applicable.
+- Protection against privilege escalation.
+- Protection against license forgery.
+- Protection against replay attacks.
+- Secure local storage.
+- Device/session management.
+
+Never store plaintext passwords.
+
+Never place database administrator credentials, payment secrets, or private signing keys in the distributed customer application.
+
+Perform security testing before release.
+
+---
+
+# PART 26 — DATABASE ARCHITECTURE
+
+Design a reliable, scalable database.
+
+Include appropriate entities/tables such as:
+
+- Owners.
+- SuperAdmins.
+- Admins.
+- Employees.
+- Customers.
+- Roles.
+- Permissions.
+- RolePermissions.
+- Products.
+- ProductFeatures.
+- Editions.
+- Templates.
+- ContentRecords.
+- BulkJobs.
+- BulkJobItems.
+- Subscriptions.
+- SubscriptionPlans.
+- SubscriptionPricingVersions.
+- PriceLocks.
+- PricingHistory.
+- Licenses.
+- DeviceActivations.
+- Orders.
+- Payments.
+- Refunds.
+- Invoices.
+- Coupons.
+- Discounts.
+- Notifications.
+- SupportTickets.
+- SoftwareVersions.
+- UpdatePackages.
+- Backups.
+- AuditLogs.
+- LoginHistory.
+- SystemSettings.
+
+Use:
+
+- Primary keys.
+- Foreign keys.
+- Unique constraints.
+- Proper indexes.
+- Database transactions.
+- Schema migrations.
+- Referential integrity.
+- Data validation.
+- Appropriate retention policies.
+
+Do not store sensitive payment information unnecessarily.
+
+Ensure customer data is isolated and administrative permissions are enforced.
+
+---
+
+# PART 27 — SYSTEM HEALTH & MONITORING
+
+Create a System Health dashboard.
+
+Show relevant metrics such as:
+
+- CPU usage.
+- RAM usage.
+- Disk space.
+- Database status.
+- API status.
+- Server status.
+- Failed jobs.
+- Error logs.
+- Background task status.
+- Update service status.
+- Backup status.
+- Application version.
+
+Only display metrics that can actually be collected.
+
+Provide searchable logs and useful error information without exposing passwords, tokens, or sensitive secrets.
+
+---
+
+# PART 28 — OWNER PANEL SIDEBAR
+
+Create a clean navigation structure with the following modules:
+
+1. Dashboard.
+2. Owner Profile.
+3. Super Admin Management.
+4. Employee Management.
+5. Customer Management.
+6. Product Management.
+7. Edition Management.
+8. Subscription Plans.
+9. Subscription Management.
+10. Pricing Management.
+11. Price Lock & Grandfathered Pricing.
+12. Payment Management.
+13. Discounts & Coupons.
+14. Automatic Billing.
+15. License Management.
+16. Device Management.
+17. Orders & Sales.
+18. Invoices & Tax.
+19. Revenue & Analytics.
+20. Marketing & Campaigns.
+21. Support Tickets.
+22. Notifications.
+23. Software Updates.
+24. Security Center.
+25. Backup & Restore.
+26. Database Management.
+27. Audit Logs.
+28. System Health.
+29. Application Settings.
+
+Every menu item must open a functional module.
+
+Hide or disable actions that the logged-in administrator is not authorized to use.
+
+---
+
+# PART 29 — RECOMMENDED TECHNICAL ARCHITECTURE
+
+First inspect the existing technology stack.
+
+Do not rewrite the entire application just to use a preferred framework.
+
+If the project is being built from scratch, consider:
+
+- C# with a supported .NET LTS version.
+- WPF or WinUI 3 for Windows desktop.
+- ASP.NET Core for secure backend services.
+- PostgreSQL for central business data.
+- SQLite for suitable local desktop data.
+- Entity Framework Core where appropriate.
+- HTTPS for communication.
+- Secure API authentication.
+- Signed software updates.
+- Windows installer packaging.
+
+Select technologies according to actual requirements and explain important architectural decisions.
+
+### Important architecture rule
+
+If the application requires centralized customer accounts, online payments, subscription verification, remote license management, and Owner administration across multiple customer PCs, design the appropriate secure backend infrastructure.
+
+Do not assume a local-only database can securely manage a commercial multi-customer subscription business across different computers.
+
+The desktop application must communicate with the backend through authenticated APIs.
+
+Support local operation where appropriate without exposing central business credentials.
+
+---
+
+# PART 30 — PERFORMANCE & SCALABILITY
+
+Optimize:
+
+- Application startup.
+- Database queries.
+- Bulk processing.
+- Memory usage.
+- File generation.
+- UI responsiveness.
+- Background tasks.
+- Large data imports.
+- Export operations.
+
+Use background processing for long-running jobs.
+
+Do not freeze the user interface during bulk operations.
+
+Provide progress information and cancellation where safe.
+
+Handle large datasets with pagination, batching, and resource limits.
+
+---
+
+# PART 31 — TESTING & QUALITY ASSURANCE
+
+Testing is compulsory.
+
+Create and execute a proper testing plan.
+
+### Functional testing
+
+Test:
+
+- Registration.
+- Login.
+- Password recovery.
+- Owner authentication.
+- Super Admin creation.
+- Permission assignment.
+- Customer management.
+- Product management.
+- Subscription purchases.
+- Renewals.
+- Price updates.
+- Price locks.
+- Coupons.
+- Payments.
+- Refunds.
+- Invoices.
+- License activation.
+- Device limits.
+- Bulk generation.
+- Template management.
+- Dynamic and Fixed elements.
+- ZIP export.
+- Backups.
+- Restore.
+- Software updates.
+- Offline mode.
+
+### Security testing
+
+Test:
+
+- Unauthorized access.
+- Privilege escalation.
+- Customer data isolation.
+- Password handling.
+- Session security.
+- API authorization.
+- Payment verification.
+- License validation.
+- Input validation.
+- Backup security.
+
+### Pricing acceptance tests
+
+Mandatory:
+
+1. Increase the standard monthly subscription price.
+2. Verify that existing active subscriptions retain their agreed price.
+3. Verify that existing renewals retain their protected price by default.
+4. Purchase a new subscription using a new customer account and verify the latest price.
+5. Purchase a completely new subscription using an existing customer account and verify the latest price.
+6. Purchase a different plan and verify its current active price.
+7. Verify that historical invoices and transactions remain unchanged.
+8. Verify that only explicitly approved changes can alter protected renewal prices.
+
+### Installation testing
+
+Test on a clean compatible Windows environment.
+
+Verify:
+
+- Installation.
+- First launch.
+- Database initialization.
+- Required dependencies.
+- Login.
+- Core functionality.
+- Updates.
+- Uninstallation.
+- Data preservation.
+- Recovery.
+
+### Final quality requirements
+
+- No known unresolved critical or high-severity defects.
+- No broken core workflows.
+- No fake functionality.
+- No exposed secrets.
+- No unauthorized Owner access.
+- All mandatory acceptance tests must pass.
+
+Do not claim the application is completely bug-free. Provide the actual testing results and any remaining limitations.
+
+---
+
+# PART 32 — FINAL PROJECT PACKAGING
+
+Prepare a clean final delivery structure.
+
+Example:
+
+/Final-Delivery
+  /Source-Code
+  /Customer-Application
+  /Owner-Admin-Panel
+  /Installer
+  /Database
+  /Migrations
+  /Documentation
+  /Configuration-Templates
+  /Release-Notes
+  /Testing-Reports
+  /Recovery-Guide
+
+Include:
+
+- Customer application EXE.
+- Owner Admin Panel or protected Owner interface.
+- Windows installer.
+- Complete source code ZIP.
+- Database migrations.
+- Documentation.
+- Test report.
+- Version information.
+
+The customer application must not expose Owner-only functionality.
+
+The Owner Panel must remain protected through secure authentication and backend authorization.
+
+Provide a practical setup guide for the backend/server components if the commercial licensing and subscription system requires them.
+
+---
+
+# PART 33 — FINAL EXECUTION INSTRUCTIONS
+
+Follow this development sequence:
+
+**PHASE 1 — PROJECT AUDIT**
+Inspect all existing files, architecture, dependencies, features, and problems.
+
+**PHASE 2 — DEVELOPMENT PLAN**
+Create a detailed checklist and implementation roadmap.
+
+**PHASE 3 — CORE APPLICATION**
+Complete and stabilize the existing application's main functionality, including bulk content generation and template management.
+
+**PHASE 4 — OWNER ADMIN PANEL**
+Build the Master Owner account, Super Admin management, employee permissions, customer management, and business dashboard.
+
+**PHASE 5 — COMMERCIAL SYSTEM**
+Implement products, plans, subscriptions, pricing, Price Lock, Grandfathered Pricing, payments, discounts, coupons, invoices, and licenses.
+
+**PHASE 6 — SECURITY**
+Implement authentication, authorization, data isolation, encryption, audit logs, secure APIs, and backup protection.
+
+**PHASE 7 — TESTING**
+Run functional, integration, database, security, offline, performance, and installation tests.
+
+**PHASE 8 — BUG FIXING**
+Fix all discovered critical and high-priority problems. Repeat relevant tests after fixes.
+
+**PHASE 9 — BUILD & PACKAGING**
+Build the production EXE, installer, and complete source ZIP.
+
+**PHASE 10 — FINAL VERIFICATION**
+Install and test the final packaged application in a clean compatible Windows environment.
+
+**PHASE 11 — DELIVERY**
+Provide the final ZIP, EXE, installer, documentation, and testing report.
+
+---
+
+# FINAL NON-NEGOTIABLE INSTRUCTIONS
+
+1. Do not stop after making a design or prototype.
+2. Do not leave important modules incomplete.
+3. Do not remove existing working functionality.
+4. Do not create fake buttons or simulated payment confirmations.
+5. Do not bypass security for convenience.
+6. Do not allow Super Admins to override Master Owner authority.
+7. Do not allow new pricing updates to silently modify existing protected subscriptions.
+8. Always apply the latest active price to new subscription purchases after its effective date, including new purchases by existing customers.
+9. Preserve historical purchase and invoice prices.
+10. Do not expose private credentials or signing keys in the customer EXE.
+11. Test every major feature and fix discovered defects.
+12. Generate the actual final EXE and ZIP, not just instructions for generating them.
+13. Report honestly what was completed, tested, and what requires external configuration.
+14. Do not declare the project complete until all mandatory requirements and acceptance tests have been verified.
+
+**YOUR FINAL OBJECTIVE:**
+
+Deliver a complete, professional, secure, scalable, commercial-ready Windows Desktop Application with a fully functional Bulk Content Generation System, Customer Application, and powerful Master Owner Admin Panel.
+
+The Master Owner must be able to operate and control the entire software business, manage customers and administrators, sell subscriptions, update prices, protect existing customer pricing, manage payments and discounts, control licenses, publish software updates, monitor revenue, and maintain the entire system from one secure administration environment.
+
+Start by auditing the existing project, then execute the complete development process until the final verified deliverables are ready.

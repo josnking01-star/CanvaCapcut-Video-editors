@@ -1,0 +1,6 @@
+{
+  "name": "CanvaCapcut Universal Video Studio",
+  "description": "Professional desktop creative suite combining Canva graphic design, CapCut multi-track timeline video editing, universal spreadsheet bulk automation, AI media generation, and commercial owner licensing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
