@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
-    "test": "tsx --test src/**/*.test.ts",
+    "test": "tsx --test src/utils/bulkEngine.test.ts src/utils/licensing.test.ts src/utils/pricingEngine.test.ts src/utils/rbac.test.ts",
     "build:electron": "electron-builder --windows --x64",
     "package:win": "vite build && electron-builder --windows --x64"
   },
