@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+dist_electron/
+release-builds/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+.aistudio/
+*.png
+!public/**/*.png
